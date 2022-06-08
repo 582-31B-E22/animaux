@@ -24,7 +24,7 @@ class Chien extends Animal
         return self::$nombre;
     }
 
-    public function seDeplacer() {
+    public function seDeplacer($vitesse) {
         echo "Je me déplace à quatre pattes";
     }
 

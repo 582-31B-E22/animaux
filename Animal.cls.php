@@ -44,6 +44,6 @@ abstract class Animal
     }
 
     // Méthodes (d'instances)
-    protected abstract function seDeplacer();
+    protected abstract function seDeplacer($vitesse);
     protected abstract function emettreSon();
 }

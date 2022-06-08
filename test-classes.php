@@ -1,9 +1,20 @@
 <?php
-include('Animal.cls.php');
-include('Chat.cls.php');
-include('Chien.cls.php');
-include('Aigle.cls.php');
-include('Baleine.cls.php');
+// Autochargement des classes
+spl_autoload_register(function($nomClasse) {
+    $fichierClasse = "$nomClasse.cls.php";
+    if(file_exists($fichierClasse)) {
+        include($fichierClasse);
+    }
+    else {
+        exit("Erreur fatale ...");
+    }
+});
+
+// include('Animal.cls.php');
+// include('Chat.cls.php');
+// include('Chien.cls.php');
+// include('Aigle.cls.php');
+// include('Baleine.cls.php');
 
 // Test de la classe Animal
 // Créer des instances d'animaux

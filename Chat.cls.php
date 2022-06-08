@@ -1,5 +1,5 @@
 <?php
-class Chat extends Animal 
+class Chat extends Animal
 {
     // Propriétés d'instance additionnelles
     private $race;
@@ -20,8 +20,8 @@ class Chat extends Animal
         return self::$nombre;
     }
 
-    public function seDeplacer() {
-        echo "Je me déplace à quatre pattes";
+    public function seDeplacer($vitesse) {
+        echo "Je me déplace à quatre pattes à la vitesse $vitesse";
     }
 
     public function emettreSon() {

@@ -18,7 +18,7 @@ class Aigle extends Animal
         return self::$nombre;
     }
 
-    public function seDeplacer() {
+    public function seDeplacer($vitesse) {
         echo "Je vole";
     }
 
