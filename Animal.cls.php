@@ -38,6 +38,11 @@ abstract class Animal
         return self::$nombre;
     }
 
+    // Méthode "magique"
+    public function __toString() {
+        return "<br>Je suis un Animal de type : ".get_class($this)."<br>";
+    }
+
     // Méthodes (d'instances)
     protected abstract function seDeplacer();
     protected abstract function emettreSon();
